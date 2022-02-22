@@ -1,0 +1,148 @@
+.cy__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-footer);
+}
+
+.cy__footer-heading {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.cy__footer-heading h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+.cy__footer-button button {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  min-width: 200px;
+  background: transparent;
+  cursor: pointer;
+  margin: 0 0 4rem;
+}
+
+.cy__footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+}
+
+.cy__footer-links div {
+  width: 250px;
+  margin: 1rem;
+}
+
+.cy__footer-links__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cy__footer-links__logo img {
+  width: 118px;
+  height: 30px;
+}
+
+.cy__footer-links__logo p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.cy__footer-links__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cy__footer-links__div h4 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.cy__footer-links__div p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.cy__footer-copyright {
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.cy__footer-copyright p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 850px) {
+  .cy__footer-heading h1{
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cy__footer-heading h1{
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .cy__footer-links div {
+    margin: 1rem 0;
+  }
+
+  .cy__footer-button button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cy__footer-heading h1 {
+      font-size: 27px;
+      line-height: 38px;
+  }
+}

@@ -1,0 +1,140 @@
+.cy__crypto {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--color-footer);
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 100% 99%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(4, 44, 84, 1) 30%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 100% 99%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(4, 44, 84, 1) 30%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 100% 99%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(4, 44, 84, 1) 30%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 100% 99%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(4, 44, 84, 1) 30%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 100% 99%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(4, 44, 84, 1) 30%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cy__crypto-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 2rem;
+}
+
+.cy__crypto-head h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  max-width: 520px;
+}
+
+.cy__crypto-head p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+
+.cy__crypto-feature {
+  display: flex;
+}
+
+.cy__features-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.cy__crypto-feature .cy__features-list__feature {
+  margin: 0;
+}
+
+.cy__crypto-feature .cy__features-list__feature-text {
+  max-width: 700px;
+}
+
+/* Customizing feature component as per needs */
+.cy__features-list .cy__features-list__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: column;
+}
+
+.cy__features-list .cy__features-list_feature-text {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 850px) {
+  .cy__crypto-head {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .cy__crypto-head p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cy__crypto-head h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+
+  /* Customizing feature component as per needs */
+  .cy__crypto-feature .cy__features-list_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .cy__crypto-feature .cy__features-list__feature {
+      flex-direction: column;
+  }  
+}
+
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .cy__features-list .cy__features-list__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
